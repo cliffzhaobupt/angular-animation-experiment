@@ -1,0 +1,14 @@
+{
+  "name": "angular-animation-experiment",
+  "version": "0.0.1",
+  "description": "a angular animation experiment",
+  "dependencies": {
+    "http-server": "^0.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "./node_modules/.bin/http-server"
+  },
+  "author": "cliff",
+  "license": "ISC"
+}

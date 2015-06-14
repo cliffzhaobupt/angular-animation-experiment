@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Angular Animation Experiment</title>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body ng-app="animationExperiment">
+  <div class="wrapper">
+    <div class="sub-links">
+      Directive Animation Experiments:
+      <a href="#/ngReapeatAnim">ng-repet</a>
+      <a href="#/ngIfAnim">ng-if</a>
+      <a href="#/ngModelAnim">ng-model</a>
+    </div>
+
+    <div class="view-container">
+      <div class="view" ng-view></div>
+    </div>
+  </div>
+
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-route/angular-route.min.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

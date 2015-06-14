@@ -1,0 +1,70 @@
+/*layout page basic style*/
+.wrapper {
+  width: 800px;
+  margin: 20px auto;
+  box-shadow: 0 0 5px #ccc;
+  padding: 10px;
+}
+
+.sub-links {
+  padding: 0 0 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.sub-links a {
+  text-decoration: none;
+  margin: 10px;
+}
+
+/*partial page basic style*/
+.directive-wrapper {
+  padding: 10px;
+  min-height: 100%;
+  line-height: 380px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+.ng-repeat-wrapper {
+  background: orange;
+}
+
+.ng-model-wrapper {
+  background: red;
+}
+
+.ng-if-wrapper {
+  background: blue;
+}
+
+/*angular animation*/
+.view-container {
+  height: 500px;
+  position: relative;
+  perspective: 800px;
+  transform-style: preserve-3d;
+}
+
+.view {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+  border: 1px solid #ccc;
+  overflow: scroll;
+  transition: transform 1s;
+}
+
+.view.ng-enter {
+  transform: rotateY(-180deg);
+}
+
+.view.ng-enter.ng-enter-active {
+  transform: rotateY(0deg);
+}
+
+.view.ng-leave.ng-leave-active {
+  transform: rotateY(180deg);
+}
