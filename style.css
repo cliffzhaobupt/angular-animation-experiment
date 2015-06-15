@@ -54,17 +54,21 @@
   left: 10%;
   border: 1px solid #ccc;
   overflow: scroll;
+  -webkit-transition: -webkit-transform 1s;
   transition: transform 1s;
 }
 
 .view.ng-enter {
+  -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
 }
 
 .view.ng-enter.ng-enter-active {
+  -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
 }
 
 .view.ng-leave.ng-leave-active {
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
